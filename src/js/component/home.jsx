@@ -4,16 +4,27 @@ import React, {useState} from "react";
 const Home = () => {
 
 	 const [selectedColor, setSelectedColor] = useState("red")
+	 function changeColors (){
+		if (selectedColor === "red") {
+			setSelectedColor("green")
+		} else if (selectedColor ==="green"){
+			setSelectedColor("yellow")
+		} else {
+			setSelectedColor("red")
+		}
+	 }
 
 
 	return (
 		<div className="text-center">
 			<div className="pole"></div>
 			<div className="traffic-light">
-				<div onClick={()=>setSelectedColor("red")} className={"light red" +(selectedColor === "red" ? " glowred " : "")}></div>
-				<div onClick={()=>setSelectedColor("yellow")} className={"light yellow" +(selectedColor === "yellow" ? " glowyellow " : "")}></div>
-				<div onClick={()=>setSelectedColor("green")} className={"light green" +(selectedColor === "green" ? " glowgreen " : "")}></div>
+				<div className={"light red" +(selectedColor === "red" ? " glowred " : "")}></div>
+				<div className={"light yellow" +(selectedColor === "yellow" ? " glowyellow " : "")}></div>
+				<div className={"light green" +(selectedColor === "green" ? " glowgreen " : "")}></div>
 			</div>
+			<button onClick={()=>changeColors()}>click me
+			</button>
 		</div>
 	);
 }
