@@ -23,7 +23,8 @@ const Home = () => {
 				<div className={"light yellow" +(selectedColor === "yellow" ? " glowyellow " : "")}></div>
 				<div className={"light green" +(selectedColor === "green" ? " glowgreen " : "")}></div>
 			</div>
-			<button onClick={()=>changeColors()}>click me
+			<br></br>
+			<button class="button" onClick={()=>changeColors()}>click me
 			</button>
 		</div>
 	);
