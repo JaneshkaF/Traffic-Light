@@ -25,10 +25,17 @@
 }
 .yellow{
     background: yellow;
+
 }
 .green{
     background: green;
 }
-.glow{
-    box-shadow: 0px 0px 30px 10px #e8d974;
+.glowred{
+    box-shadow: 0px 0px 30px 10px red;
+}
+.glowyellow{
+    box-shadow: 0px 0px 30px 10px yellow;
+}
+.glowgreen{
+    box-shadow: 0px 0px 30px 10px greenyellow;
 }
